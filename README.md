@@ -1,7 +1,7 @@
-# XAI_ImageClassification
-
-**Explainable AI (XAI) for Image Classification**  
+# Local Explainable AI (XAI) for Image Classification
 This repository explores the application of XAI techniques to understand and improve image classification models.
+
+**Disclaimer**: I don't own any of the images used in this study. All of their sources are described in the respective jupyter notebooks.
 
 ## Overview
 
@@ -35,16 +35,18 @@ The project investigates the use of **local XAI methods** (e.g., LIME, SHAP, Gra
 
 2. Install dependencies:
 ```bash
-	source env/bin/activate
-	pip install -r requirements.txt
+   source env/bin/activate
+   pip install -r requirements.txt
 ```
 
 ## Key Findings
+
 - LIME: Intuitive visualizations but unstable across runs. Useful for highlighting "certain" and "uncertain" regions.
 - SHAP: Excellent for comparing feature contributions across classes but less intuitive for quick insights.
 - Grad-CAM: Strong visual feedback, especially in robust models, focusing on entire regions rather than scattered points.
 
 ## Future Work
+
 Further reduce false negatives in pneumonia classification.
 Address hyper-focus on specific patterns (e.g., leaves in insect classification).
 Extend analysis to additional datasets and complex architectures.
